@@ -25,11 +25,11 @@
     Output: [1,3,2]
 
 - Solution
-    > Intuition ye hai ki pehle vo element dhundhna hai jisse swap krna hai fir jisko krna hai or baki array sorted hoga to usko reverse krdena hai closest bnane ke liye.
-    > Find the element `X` from behind i.e < i+1 
-    > If no such element then reverse the array 
-    > else find smallest element i.e >  `X` (from behind to X) and swap with that element 
-    > Then reverse the array from `X` to end
+    - Intuition ye hai ki pehle vo element dhundhna hai jisse swap krna hai fir jisko krna hai or baki array sorted hoga to usko reverse krdena hai closest bnane ke liye.
+    - Find the element `X` from behind i.e < i+1 
+    - If no such element then reverse the array 
+    - else find smallest element i.e >  `X` (from behind to X) and swap with that element 
+    - Then reverse the array from `X` to end
 
 
     ## 3.  Longest Consecutive Sequence 128.
@@ -43,5 +43,5 @@
 
 
 - Solution
-  >  Use Set Then check the sequence.
+   -  Use Set Then check the sequence.
 

@@ -8,7 +8,7 @@
      Input: nums = [1,2,3]
      Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
-- Solution
+- ### Solution
     Using Recursion,  loop over every element and call the function repeatedly.
 
 
@@ -24,7 +24,7 @@
     Input: nums = [1,2,3]
     Output: [1,3,2]
 
-- Solution
+- ### Solution
     - Intuition ye hai ki pehle vo element dhundhna hai jisse swap krna hai fir jisko krna hai or baki array sorted hoga to usko reverse krdena hai closest bnane ke liye.
     - Find the element `X` from behind i.e < i+1 
     - If no such element then reverse the array 
@@ -42,6 +42,6 @@
   Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 
 
-- Solution
+- ### Solution
    -  Use Set Then check the sequence.
 

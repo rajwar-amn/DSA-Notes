@@ -58,10 +58,11 @@ You must do it in place.
                    [1,0,1],
                    [1,1,1]]
   ```
+  ```
   Output: [[1,0,1],
            [0,0,0],
            [1,0,1]]
-
+  ```
 
 - ### Solution
    -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array

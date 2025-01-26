@@ -1,69 +1,90 @@
 # Array
 
 ## 1.  Permutations 46
-- Given an array nums of distinct integers, return all the possible permutations . You can return the answer in any order.
+  - Given an array nums of distinct integers, return all the possible permutations . You can return the answer in any order.
 
-  ```
-  Example 1:
-     Input: nums = [1,2,3]
-     Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+    ```
+    Example 1:
+      Input: nums = [1,2,3]
+      Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
-- ### Solution
-    Using Recursion,  loop over every element and call the function repeatedly.
+  - ### Solution
+      Using Recursion,  loop over every element and call the function repeatedly.
 
 
 
 ## 2. Next Permutation 31.
-- The next permutation of an array of integers is the next lexicographically greater permutation of its integer. 
-  - For example, the next permutation of arr = [1,2,3] is [1,3,2].
-  - Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
-  - While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
+  - The next permutation of an array of integers is the next lexicographically greater permutation of its integer. 
+    - For example, the next permutation of arr = [1,2,3] is [1,3,2].
+    - Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
+    - While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
 
-  ```
-  Example 1:
-    Input: nums = [1,2,3]
-    Output: [1,3,2]
+    ```
+    Example 1:
+      Input: nums = [1,2,3]
+      Output: [1,3,2]
 
-- ### Solution
-    - Intuition ye hai ki pehle vo element dhundhna hai jisse swap krna hai fir jisko krna hai or baki array sorted hoga to usko reverse krdena hai closest bnane ke liye.
-    - Find the element `X` from behind i.e < i+1 
-    - If no such element then reverse the array 
-    - else find smallest element i.e >  `X` (from behind to X) and swap with that element 
-    - Then reverse the array from `X` to end
+  - ### Solution
+      - Intuition ye hai ki pehle vo element dhundhna hai jisse swap krna hai fir jisko krna hai or baki array sorted hoga to usko reverse krdena hai closest bnane ke liye.
+      - Find the element `X` from behind i.e < i+1 
+      - If no such element then reverse the array 
+      - else find smallest element i.e >  `X` (from behind to X) and swap with that element 
+      - Then reverse the array from `X` to end
 
 
 ## 3.  Longest Consecutive Sequence 128.
-- Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+  - Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 
-  ```
-  Example 1:
-  Input: nums = [100,4,200,1,3,2]
-  Output: 4 
-  Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+    ```
+    Example 1:
+    Input: nums = [100,4,200,1,3,2]
+    Output: 4 
+    Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 
 
-- ### Solution
-   -  Use Set Then check the sequence.
+  - ### Solution
+    -  Use Set Then check the sequence.
 
 
 ## 4. Set Matrix Zeroes 73.
-- Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
+  - Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
 
-  You must do it in place.
+    You must do it in place.
 
-  ### Example 1:
-    ```
-    Input: matrix = [[1,1,1],
-                    [1,0,1],
-                    [1,1,1]]
-    ```
-    ```
-    Output: [[1,0,1],
-            [0,0,0],
-            [1,0,1]]
-    ```
+    ### Example 1:
+      ```
+      Input: matrix = [[1,1,1],
+                      [1,0,1],
+                      [1,1,1]]
+      ```
+      ```
+      Output: [[1,0,1],
+              [0,0,0],
+              [1,0,1]]
+      ```
 
-- ### Solution
-  -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
-  - Use first row and column to not use extra space
+  - ### Solution
+    -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
+    - Use first row and column to not use extra space
+
+## 4. Rotate Image 48.
+  - You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+
+  - You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+
+    ### Example 1:
+      ```
+      Input: matrix = [[1,2,3],
+                       [4,5,6],
+                       [7,8,9]]
+      ```
+      ```
+      Output: [[7,4,1],
+               [8,5,2],
+               [9,6,3]]
+      ```
+
+  - ### Solution
+    -  Transpose the matrix and reverse it 
+    - Alternative, swap top with bottom then transpose
 

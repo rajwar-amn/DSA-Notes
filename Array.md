@@ -63,7 +63,7 @@
             [1,0,1]]
     ```
 
-  - ### Solution
-    -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
-    - Use first row and column to not use extra space
+- ### Solution
+  -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
+  - Use first row and column to not use extra space
 

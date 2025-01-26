@@ -46,7 +46,7 @@
     -  Use Set Then check the sequence.
 
 
-## 4. Set Matrix Zeroes 73.
+## 5. Set Matrix Zeroes 73.
   - Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
 
     You must do it in place.

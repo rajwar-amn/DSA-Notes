@@ -32,7 +32,7 @@
     - Then reverse the array from `X` to end
 
 
-    ## 3.  Longest Consecutive Sequence 128.
+## 3.  Longest Consecutive Sequence 128.
 - Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 
   ```
@@ -46,25 +46,24 @@
    -  Use Set Then check the sequence.
 
 
-
-    ## 3. Set Matrix Zeroes 73.
+## 4. Set Matrix Zeroes 73.
 - Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
 
-You must do it in place.
+  You must do it in place.
 
-### Example 1:
-  ```
-  Input: matrix = [[1,1,1],
-                   [1,0,1],
-                   [1,1,1]]
-  ```
-  ```
-  Output: [[1,0,1],
-           [0,0,0],
-           [1,0,1]]
-  ```
+  ### Example 1:
+    ```
+    Input: matrix = [[1,1,1],
+                    [1,0,1],
+                    [1,1,1]]
+    ```
+    ```
+    Output: [[1,0,1],
+            [0,0,0],
+            [1,0,1]]
+    ```
 
-- ### Solution
-   -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
-   - Use first row and column to not use extra space
+  - ### Solution
+    -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
+    - Use first row and column to not use extra space
 

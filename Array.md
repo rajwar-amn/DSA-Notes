@@ -46,7 +46,7 @@
     -  Use Set Then check the sequence.
 
 
-## 5. Set Matrix Zeroes 73.
+## 4. Set Matrix Zeroes 73.
   - Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
 
     You must do it in place.
@@ -67,7 +67,7 @@
     -  Use a row array and column array to track which one has a 0 and fill it with 0 then again iterate and if these array contains 0 then make changes in array
     - Use first row and column to not use extra space
 
-## 4. Rotate Image 48.
+## 5. Rotate Image 48.
   - You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 
   - You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
@@ -87,4 +87,41 @@
   - ### Solution
     -  Transpose the matrix and reverse it 
     - Alternative, swap top with bottom then transpose
+
+## 6. Spiral Matrix 54.
+  - Given an m x n matrix, return all elements of the matrix in spiral order.
+
+
+    ### Example 1:
+       ```
+      Input: matrix = [[1,2,3],
+                      [4,5,6],
+                      [7,8,9]]
+      ```
+      ```
+      Output: [1,2,3,6,9,8,7,4,5]
+      ```
+
+  - ### Solution
+    -  Make the logic for traversal in all directions ( top left bottom right)
+
+
+
+## 7. Subarray Sum Equals K 560.
+  - Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+
+  - A subarray is a contiguous non-empty sequence of elements within an array.
+ 
+
+    ### Example 1:
+       ```
+      Input: nums = [1,1,1], k = 2
+      Output: 2
+      ```
+      
+
+  - ### Solution
+    -  Make the logic for prefix sum and store it in a map
+
+
 

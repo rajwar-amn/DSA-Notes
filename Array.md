@@ -125,3 +125,18 @@
 
 
 
+## 8. Majority Element II 229.
+  - Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
+
+    ### Example 1:
+       ```
+      Input: nums = [3,2,3]
+      Output: [3]
+      ```
+      
+
+  - ### Solution
+    -  Moore's voting algorithm (extended version) take 4 pointers two for count and 2 for elements as there can only be a max of two elements 
+
+
+

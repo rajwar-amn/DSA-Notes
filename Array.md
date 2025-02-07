@@ -138,5 +138,19 @@
   - ### Solution
     -  Moore's voting algorithm (extended version) take 4 pointers two for count and 2 for elements as there can only be a max of two elements 
 
+## 3Sum  15.
+  - Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]] `such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
+
+Notice that the solution set must not contain duplicate triplets.
+    ### Example 1:
+       ```
+      Input: nums = [3,2,3]
+      Output: [3]
+      ```
+      
+
+  - ### Solution
+    -  sort and fix one element and use two pointer to get rest of the elements. update start and end accordingly 
+
 
 

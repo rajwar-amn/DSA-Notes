@@ -7,5 +7,6 @@
 - [x] 48. Rotate Image 
 - [x] 560. Subarray Sum Equals K
 - [x] 118. Pascal's Triangle
-- [x] Majority Element II 229.
+- [x] Majority Element II 229. 
+- [x] 15. 3Sum
 

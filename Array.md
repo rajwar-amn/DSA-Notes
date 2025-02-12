@@ -138,7 +138,7 @@
   - ### Solution
     -  Moore's voting algorithm (extended version) take 4 pointers two for count and 2 for elements as there can only be a max of two elements 
 
-## 9  3 Sum  15.
+## 9. 3Sum  15.
   - Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]] `such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 
   - Notice that the solution set must not contain duplicate triplets.
@@ -153,13 +153,12 @@
     -  sort and fix one element and use two pointer to get rest of the elements. update start and end accordingly 
 
 
-## 10 4Sum 18.
-  - Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
-    - 0 <= a, b, c, d < n
-    - a, b, c, and d are distinct.
-    - nums[a] + nums[b] + nums[c] + nums[d] == target
-  - You may return the answer in any order.
+## 10. 4Sum  18.
+  - Given an array `nums` of `n` integers, return an array of all the unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
+  - `0 <= a, b, c, d < n`
+  - `a`, `b`, `c`, and `d` are distinct.
+  - `nums[a] + nums[b] + nums[c] + nums[d] == target`
 
     ### Example 1:
        ```
@@ -169,7 +168,23 @@
       
 
   - ### Solution
-    -  fix one Element then find the rest using 3sum problem 
+    -  fix one element and use 3Sum approach for the rest of the elements 
+
+
+## 11. Merge Intervals 56.
+  - Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+
+    ### Example 1:
+       ```
+      Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+      Output: [[1,6],[8,10],[15,18]]
+      Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+      ```
+      
+
+  - ### Solution
+    -  sort the array and make a check on the array with the last added element on answer array. 
 
 
 

@@ -138,10 +138,10 @@
   - ### Solution
     -  Moore's voting algorithm (extended version) take 4 pointers two for count and 2 for elements as there can only be a max of two elements 
 
-## 3Sum  15.
+## 9  3 Sum  15.
   - Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]] `such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 
-Notice that the solution set must not contain duplicate triplets.
+  - Notice that the solution set must not contain duplicate triplets.
     ### Example 1:
        ```
       Input: nums = [3,2,3]
@@ -151,6 +151,25 @@ Notice that the solution set must not contain duplicate triplets.
 
   - ### Solution
     -  sort and fix one element and use two pointer to get rest of the elements. update start and end accordingly 
+
+
+## 10 4Sum 18.
+  - Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+    - 0 <= a, b, c, d < n
+    - a, b, c, and d are distinct.
+    - nums[a] + nums[b] + nums[c] + nums[d] == target
+  - You may return the answer in any order.
+
+
+    ### Example 1:
+       ```
+      Input: nums = [1,0,-1,0,-2,2], target = 0
+      Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+      ```
+      
+
+  - ### Solution
+    -  fix one Element then find the rest using 3sum problem 
 
 
 

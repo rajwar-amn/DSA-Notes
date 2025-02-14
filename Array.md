@@ -212,8 +212,7 @@
 
 
 ## 13. Maximum Product Subarray 152.
-  - Given an integer array nums, find a 
-subarray that has the largest product, and return the product.
+  - Given an integer array nums, find a subarray that has the largest product, and return the product.
 
   - The test cases are generated so that the answer will fit in a 32-bit integer.
  
@@ -227,6 +226,22 @@ subarray that has the largest product, and return the product.
 
   - ### Solution
     -  produt form start and end of the array then return the max of both and answer
+
+
+
+## 14 Search in Rotated Sorted Array 33.
+  - Given an integer array arr of size N, sorted in ascending order (with distinct values) and a target value k. Now the array is rotated at some pivot point unknown to you. Find the index at which k is present and if k is not present return -1.
+
+ 
+    ### Example 1:
+       ```
+      Input: nums = [4,5,6,7,0,1,2], target = 0
+      Output: 4
+      ```
+      
+
+  - ### Solution
+    -  Use the fact that one side of the array will always be sorted and check on the sorted part if not present then eleminate that part else move pointers accordingly.
 
 
 

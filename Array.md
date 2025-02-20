@@ -292,6 +292,23 @@
 
 
 
+## 18. Find Minimum in Rotated Sorted Array 153.
+  - Given an integer array arr of size N, sorted in ascending order (with distinct values). Now the array is rotated between 1 to N times which is unknown. Find the minimum element in the array.  
+ 
+    ### Example 1:
+       ```
+        Input: nums = [3,4,5,1,2]
+        Output: 1
+        Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+      ```
+      
+
+  - ### Solution
+    -  Left and Right will always be sorted so use this fact to move Start and End. keep the track of minimum and for each iteration store minimum of sorted sides first element and ans and eliminate sorted side.
+
+
+
+
 
 
 

@@ -308,6 +308,22 @@
 
 
 
+## 19. Single Element in a Sorted Array 540.
+  - Given an array of N integers. Every number in the array except one appears twice. Find the single number in the array. 
+ 
+    ### Example 1:
+       ```
+        Input: nums = [1,1,2,3,3,4,4,8,8]
+        Output: 2
+      ```
+      
+
+  - ### Solution
+    -  So the left side of the single element will always have pairs at odd,even indexes and right side will have even,odd. use this fact and element left and right side of the array.
+    - odd,even is same eleminate left side else right side 
+
+
+
 
 
 

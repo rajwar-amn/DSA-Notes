@@ -324,6 +324,58 @@
 
 
 
+## 20. Find Peak Element 162.
+  - Given an array of length N. Peak element is defined as the element greater than both of its neighbors. Formally, if 'arr[i]' is the peak element, 'arr[i - 1]' < 'arr[i]' and 'arr[i + 1]' < 'arr[i]'. Find the index(0-based) of a peak element in the array. If there are multiple peak numbers, return the index of any peak number. 
+ 
+    ### Example 1:
+       ```
+        Input: nums = [1,2,3,1]
+        Output: 2
+        Explanation: 3 is a peak element and your function should return the index number 2.
+      ```
+      
+
+  - ### Solution
+    -  Use binary search and check for each mid if the element is greater then previous and next element. if not then if previous is smaller then mid then check in right side else check in left side
+
+  - Remeber the edge cases if first or last element is peak elmnt or if size is just 1.
+
+
+
+## 21. Square Root (GFG)
+  -  You are given a positive integer n. Your task is to find and return its square root. If ‘n’ is not a perfect square, then return the floor value of 'sqrt(n)'.
+ 
+    ### Example 1:
+       ```
+        Input: n = 4
+        Output: 2
+        Explanation: Since, 4 is a perfect square, so its square root is 2.
+      ```
+      
+
+  - ### Solution
+    -  Use binary search from one - given no. and for each mid check if it is sqrt of the given no. and return it
+
+
+
+
+## 22. Square Root (GFG)
+  -  Given two numbers N and M, find the Nth root of M. The nth root of a number M is defined as a number X when raised to the power N equals M. If the 'nth root is not an integer, return -1.
+ 
+    ### Example 1:
+       ```
+        Input: n = 2, m = 9
+        Output: 3
+        Explanation: 32 = 9
+      ```
+      
+
+  - ### Solution
+    -  Use binary search from one - given no. and for each mid check if it is nth root of m using a different function 
+
+
+
+
 
 
 
